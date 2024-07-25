@@ -12,12 +12,12 @@ class ProductsInitial extends ProductState {}
 class LoadingProducts extends ProductState {}
 
 class ProductsLoaded extends ProductState {
-  // final List<Product> products;
+  final List<Product> products;
 
-  //const ProductsLoaded({required this.products});
+  const ProductsLoaded({required this.products});
 
-  // @override
-  // List<Object> get props => [products];
+  @override
+  List<Object> get props => [products];
 }
 
 class LoadProductsError extends ProductState {
