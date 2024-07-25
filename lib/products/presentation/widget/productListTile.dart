@@ -20,7 +20,7 @@ class ProductListTile extends StatelessWidget {
     Widget ratingRow = Padding(
       padding: EdgeInsets.only(top: 10),
       child: Row(
-        // mainAxisAlignment: MainAxisAlignment.spaceAround,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Row(
             children: [
@@ -31,13 +31,12 @@ class ProductListTile extends StatelessWidget {
               )
             ],
           ),
-          SizedBox(
-            width: 20,
-          ),
-          Text(
-            "Rate Count ${count}",
-            style: TextStyle(color: Colors.orange),
-          )
+
+          Text('RM ${productPrice.toStringAsFixed(2)}')
+          // Text(
+          //   "Rate Count ${count}",
+          //   style: TextStyle(color: Colors.orange),
+          // )
         ],
       ),
     );
@@ -52,6 +51,7 @@ class ProductListTile extends StatelessWidget {
         overflow: TextOverflow.ellipsis,
       ),
       subTitle: ratingRow,
+      // icon:
       // icon: const Icon(Icons.shopping_cart)
     );
   }
