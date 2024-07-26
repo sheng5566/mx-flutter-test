@@ -7,6 +7,7 @@ class API {
 }
 
 class Constant {
+  static List<int> cartList = [];
   static Color backgroundColor = Color.fromARGB(255, 7, 19, 37);
   static Color color1 = Color.fromARGB(255, 159, 0, 0);
   static Color color2 = Color.fromARGB(255, 255, 208, 0);
