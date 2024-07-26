@@ -46,7 +46,7 @@ class _HomepageState extends State<Homepage> {
           centerTitle: true,
           backgroundColor: Colors.blue,
           automaticallyImplyLeading: false,
-          title: Text(
+          title: const Text(
             'Mx Test',
             style: TextStyle(color: Colors.white),
           ),

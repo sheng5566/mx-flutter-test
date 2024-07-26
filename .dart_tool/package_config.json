@@ -170,6 +170,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "photo_view",
+      "rootUri": "file:///Users/shengguo/.pub-cache/hosted/pub.dev/photo_view-0.15.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "provider",
       "rootUri": "file:///Users/shengguo/.pub-cache/hosted/pub.dev/provider-6.1.2",
       "packageUri": "lib/",
@@ -236,7 +242,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2024-07-25T14:10:01.708728Z",
+  "generated": "2024-07-26T12:00:45.047657Z",
   "generator": "pub",
   "generatorVersion": "3.0.6"
 }
