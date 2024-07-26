@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
+import 'package:mxtest/products/presentation/widget/productPage.dart';
 
 import '../../domain/entities/products.dart';
 import '../../domain/entities/rating.dart';
@@ -17,8 +18,15 @@ class ProductListTile extends StatelessWidget {
     final double rate = rating.rate;
     // final int count = rating.count;
 
+    void handleNavigateProductPage(Product product) {
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => ProductPage(product: product)));
+    }
+
     Widget ratingRow = Padding(
-      padding: EdgeInsets.only(top: 10),
+      padding: const EdgeInsets.only(top: 10),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -27,7 +35,7 @@ class ProductListTile extends StatelessWidget {
               const Icon(Icons.star, color: Colors.orange),
               Text(
                 rate.toString(),
-                style: TextStyle(color: Colors.orange),
+                style: const TextStyle(color: Colors.orange),
               )
             ],
           ),
@@ -51,8 +59,7 @@ class ProductListTile extends StatelessWidget {
         overflow: TextOverflow.ellipsis,
       ),
       subTitle: ratingRow,
-      // icon:
-      // icon: const Icon(Icons.shopping_cart)
+      onTap: () => handleNavigateProductPage(product),
     );
   }
 }
